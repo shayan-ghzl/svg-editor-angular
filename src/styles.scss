@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 36px;
+}
+
+.canvas {
+    display: inline-flex;
+    border: 2px solid;
+}
+
+.toolbar {
+    display: inline-block;
+    padding: 6px;
+    background-color: #8d8d8d;
+    border-right: 2px solid;
+}
+
+.toolbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 103px;
+    margin-bottom: 8px;
+}
+
+.selected {
+    outline: 2px solid;
+}
+
+button.selected {
+    border: 3px solid #ff0000;
+}
+
+.dialog {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000080;
+}
+
+.dialog .content {
+    position: relative;
+    background-color: #fff;
+    padding: 36px;
+    border: 1px solid #222;
+    margin-bottom: 130px;
+}
+
+.close {
+    position: absolute;
+    right: 36px;
+    top: 36px;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none !important;
+}
